@@ -19,7 +19,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/gau@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/gau@sha256:d639e474fd1df1a0f8ed626732d1153a92a87d4bc7e996f055700245bc59a4a3
   platforms: [linux/amd64, linux/arm64]
   command: ["gau", "--json", "--providers", "wayback,otx,urlscan", "--blacklist", "png,jpg,jpeg,gif,svg,ico,woff,woff2,ttf,css", "{domain}"]
   output_format: jsonl
